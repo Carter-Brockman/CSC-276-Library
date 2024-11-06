@@ -13,6 +13,7 @@ public class LibraryItem {
         isAvailable = true;
     }
 
+    //Marks item as unavailable or tell user its already checked out
     public void checkOutBook()
     {
         if(isAvailable)
@@ -25,6 +26,7 @@ public class LibraryItem {
         }
     }
 
+    //Marks item as available or tells user item is already available
     public void returnItem()
     {
         if(!isAvailable)
@@ -37,12 +39,12 @@ public class LibraryItem {
         }
     }
 
-    public String toString()
+    public String toString() //Default output to be later overridden
     {
         return (title + ", written by " + author);
     }
 
-    public void displayDetails()
+    public void displayDetails() //Default output to be later overridden
     {
         System.out.println("Title: " + title);
         System.out.println("Author: " + author);
@@ -56,4 +58,4 @@ public class LibraryItem {
         }
     }
 
-}
+} //End of LibraryItem

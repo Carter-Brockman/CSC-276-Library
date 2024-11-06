@@ -2,20 +2,20 @@ package LibraryPackage;
 
 public class Journal extends LibraryItem{
 
-    private int issueNumber;
+    private int issueNumber; //This class only
 
     public Journal(String title, String author, int issueNumber)
     {
         super(title,author);
         this.issueNumber = issueNumber;
     }
-    @Override
+    @Override //Shows additional information (issueNumber)
     public String toString()
     {
         return (title + ", written by " + author + ", issue number " + issueNumber);
     }
 
-    @Override
+    @Override //overridden to display info specifically for journals
     public void displayDetails()
     {
         System.out.println("Title: " + title);
@@ -32,4 +32,4 @@ public class Journal extends LibraryItem{
         }
     }
 
-}
+} //End of Journal

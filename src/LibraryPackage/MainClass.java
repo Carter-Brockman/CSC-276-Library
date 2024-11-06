@@ -4,8 +4,10 @@ public class MainClass {
 
     public static void main(String[] args){
 
+        //Library object we use to store items
         Library library = new Library();
 
+        //Adding new items objects to our Library
         library.addItem(new Book("Calculus Volume II", "Gilbert Strang", 737));
         library.addItem(new Journal("Accounting", "Ford Douglass", 32));
         library.addItem(new Journal("Manufacturing Processes", "Davis Keith", 83));
@@ -25,10 +27,10 @@ public class MainClass {
 
         //After returning manufacturing processes, still waiting on Calculus Volume II
         library.returnItem(2);
-        System.out.println("After returning books");
+        System.out.println("After returning book(s)");
         library.displayItems();
         System.out.println("------------------------------------------\n");
 
-    } //End of main
+    } //End of main()
 
 } //End of MainClass

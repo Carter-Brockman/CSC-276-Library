@@ -2,20 +2,20 @@ package LibraryPackage;
 
 public class Book extends LibraryItem{
 
-    private int pages;
+    private int pages; //This class only
 
     public Book(String title, String author, int pages)
     {
         super(title,author);
         this.pages = pages;
     }
-    @Override
+    @Override //Shows additional information (pages)
     public String toString()
     {
         return (title + ", written by " + author + ", consisting of " + pages + " pages");
     }
 
-    @Override
+    @Override //overridden to display info specifically for books
     public void displayDetails()
     {
         System.out.println("Title: " + title);
@@ -32,4 +32,4 @@ public class Book extends LibraryItem{
         }
     }
 
-}//End of LibraryItem
+} //End of Book
